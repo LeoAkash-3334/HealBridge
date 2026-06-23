@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealBridge Signup</title>
+
+<link rel="stylesheet" href="css/auth.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Create Account</h1>
+
+<div class="role-selection">
+<button class="role active">Patient</button>
+<button class="role">Doctor</button>
+</div>
+
+<form id="signupForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Phone Number">
+
+<div class="password-box">
+<input type="password" id="signupPassword" placeholder="Password" required>
+<span onclick="toggleSignupPassword()">👁</span>
+</div>
+
+<div class="password-box">
+<input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+</div>
+
+<button>Create Account</button>
+
+<p class="bottom">
+Already have an account?
+<a href="login.html">Login</a>
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>
